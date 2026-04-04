@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Book</title>
+</head>
+<body>
+
+<h1>Edit Book</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    
+    <label>Title:</label><br>
+    <input type="text" name="title" value="{{ book.title }}" required><br><br>
+
+    <label>Author:</label><br>
+    <input type="text" name="author" value="{{ book.author }}" required><br><br>
+
+    <label>Description:</label><br>
+    <textarea name="description" required>{{ book.description }}</textarea><br><br>
+
+    <label>Published Date:</label><br>
+    <input type="date" name="published_date" value="{{ book.published_date|date:'Y-m-d' }}"><br><br>
+
+    <button type="submit">Update</button>
+</form>
+
+<br>
+<a href="/books/">← Back to All Books</a>
+
+</body>
+</html>
