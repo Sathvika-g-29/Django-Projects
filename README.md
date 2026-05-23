@@ -1,5 +1,7 @@
 # Django Projects Portfolio
 
+Portfolio repository for Django learning projects and backend practice.
+
 A curated collection of Django projects built while learning and practicing backend development, template rendering, CRUD workflows, forms, validations, API integration, and project organization.
 
 This repository is structured as a multi-project Django portfolio. Each folder is an independent Django project with its own `manage.py`, apps, templates, migrations, and settings.
