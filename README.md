@@ -13,6 +13,7 @@ This repository is structured as a multi-project Django portfolio. Each folder i
 | `api` | User listing API demo | Fetches external user data from JSONPlaceholder using `requests` and renders it in a Django template |
 | `sample` | Education society website | Template inheritance, static assets, page routing, and simple dynamic data rendering |
 | `email_project` | Email configuration and test mail app | Stores SMTP configuration through a Django form and sends test emails using Django's mail utilities |
+| `weatherproject` | Weather lookup app | Uses OpenWeather API configuration through environment variables and renders city weather details |
 
 ## Tech Stack
 
@@ -34,6 +35,7 @@ Django-Projects/
   email_project/
   sample/
   student_project/
+  weatherproject/
 ```
 
 ## How To Run A Project
@@ -83,6 +85,7 @@ Some projects use specific URLs:
 | `api` | configured user listing route |
 | `email_project` | `/email-config/` and `/send-test/` |
 | `sample` | project root and app routes |
+| `weatherproject` | `/` |
 
 ## What This Repository Demonstrates
 
@@ -95,6 +98,7 @@ Some projects use specific URLs:
 - Rendering dynamic HTML templates
 - Organizing reusable templates and static files
 - Connecting Django views to external APIs
+- Reading API keys from environment variables
 - Configuring email delivery with Django SMTP settings
 - Keeping repositories clean with `.gitignore`
 
