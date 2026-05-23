@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{%load static %}
+
+{% block content %}
+<h2>Colleges</h2>
+<ul>
+  {% for c in colleges %}
+<li>
+  <a href="{% static 'images/svecw.png' %}">{{ c }}
+
+  </a>
+</li>
+    {% endfor %}
+</ul>
+{% endblock %}

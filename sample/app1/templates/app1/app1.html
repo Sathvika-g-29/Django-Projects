@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<h1>I am App5</h1>
+
+
+    <img src="{% static 'app5/svecwpic.jpeg' %}" alt="logo">
+    <img src="{% static 'flower.jpg' %}" alt="flower">-->
+    <!--{{data}}-->
+    <h1>SVECW</h1>
+    <ul>
+        {% for i in data %}
+        <li>
+            {{i}}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

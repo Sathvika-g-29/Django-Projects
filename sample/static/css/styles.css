@@ -1,0 +1,12 @@
+h1{
+    color: red;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: rgb(160, 49, 68);
+    background-color: lightblue;
+}
