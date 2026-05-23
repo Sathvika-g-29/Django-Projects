@@ -12,6 +12,7 @@ This repository is structured as a multi-project Django portfolio. Each folder i
 | `student_project` | Student registration system | Form handling, field validation, file upload support, SQLite database integration, and success workflow |
 | `api` | User listing API demo | Fetches external user data from JSONPlaceholder using `requests` and renders it in a Django template |
 | `sample` | Education society website | Template inheritance, static assets, page routing, and simple dynamic data rendering |
+| `email_project` | Email configuration and test mail app | Stores SMTP configuration through a Django form and sends test emails using Django's mail utilities |
 
 ## Tech Stack
 
@@ -30,6 +31,7 @@ This repository is structured as a multi-project Django portfolio. Each folder i
 Django-Projects/
   api/
   book_crud/
+  email_project/
   sample/
   student_project/
 ```
@@ -79,6 +81,7 @@ Some projects use specific URLs:
 | `student_project` | `/register/` |
 | `book_crud` | project root or configured book URLs |
 | `api` | configured user listing route |
+| `email_project` | `/email-config/` and `/send-test/` |
 | `sample` | project root and app routes |
 
 ## What This Repository Demonstrates
@@ -92,6 +95,7 @@ Some projects use specific URLs:
 - Rendering dynamic HTML templates
 - Organizing reusable templates and static files
 - Connecting Django views to external APIs
+- Configuring email delivery with Django SMTP settings
 - Keeping repositories clean with `.gitignore`
 
 ## Notes

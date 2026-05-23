@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Configuration</title>
+</head>
+<body>
+
+    <h2>Email Configuration Settings</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit">Save Settings</button>
+    </form>
+
+</body>
+</html>
